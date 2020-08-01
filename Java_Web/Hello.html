@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello HTMl</title>
+</head>
+<body >
+    <form action = "http://localhost:8080" method = "post">
+        <input type = "hidden" name = "action" value = "login"/>
+        <h1 align = "center">用户注册</h1>
+        <table align = "center">
+            <tr>
+                <td>用户名称：</td>
+                <td>
+                    <input type = "text" name = "username"/>
+                </td>
+            </tr>
+            <tr>
+                <td>用户密码：</td>
+                <td>
+                    <input type = "password" name = "password"/>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码:</td>
+                <td>
+                    <input type = "passwort"/>
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type = "radio" name = "sex" value = "boy" checked = "checked"/>男
+                    <input type = "radio" name = "sex" value = "girl"/>女
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好：</td>
+                <td>
+                    <input type = "checkbox" name = "hobby" checked = "checked" value = "Java"/>Java
+                    <input type = "checkbox" name = "hobby" value = "C#"/>C#
+                    <input type = "checkbox" name = "hobby" checked = "checked" value = "C++"/>C++
+                    <input type = "checkbox" name = "hobby" value = "HTML"/>HTML
+                </td>
+            </tr>
+            <tr>
+                <td>国籍：</td>
+                <td>
+                    <select name = "country">
+                        <option name = "none">---请选择国籍---</option>
+                        <option name = "China" selected = "selected">中国</option>
+                        <option name = "Japan">日本</option>
+                        <option name = "USA">美国</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我评价：</td>
+                <td>
+                    <textarea name = "description" row = "10" cols = "20">---请输入自我评价---</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type = "reset"/></td>
+                <td align = "center"><input type = "submit"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
